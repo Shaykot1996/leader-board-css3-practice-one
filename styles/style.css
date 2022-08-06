@@ -183,3 +183,33 @@ span{
     color: #AEAEAE;
 }
 
+/*---------------
+ media query
+ ---------------- */
+
+ /* Mobile Devices */
+ @media only screen and (max-width:688px){
+    .container, .head-section{
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player, .blog{
+        flex-direction: column;
+    }
+ }
+
+ /* Tablet Devices */
+ @media only screen and (min-width: 688px) and (max-width: 992px){
+    .container, .head-section{
+        width: 100%;
+    }
+    .players, .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+ }
